@@ -1,0 +1,81 @@
+* {
+  margin :0; padding : 0; font-family: Helvetica;
+}
+.container {
+  width: 68%;
+  margin: 15px auto;
+}
+header {
+  display :flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  cursor: pointer;
+  color : #808080;
+  font-size: 28px;
+}
+header h1:hover {
+  color : #3B3B3B;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 5px 10px;
+  text-decoration : none;
+  color : #3B3B3B;
+}
+.card {
+  width : 60%;
+  font-size : 30px;
+  margin: 15px auto;
+  text-align: center;
+}
+.card a {
+  text-decoration: none;
+  color : #808080;
+  font-size : 15px;
+}
+.card a:hover {
+  color : #3B3B3B;
+}
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 90%;
+  }
+  .card h2 {
+    font-size : 35px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 87%;
+  }
+
+  .card h2 {
+    font-size : 29px;
+  }
+  header h1 {
+    font-size : 19px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 90%;
+  }
+   .card h2 {
+    font-size : 20px;
+  }
+   header h1 {
+    font-size : 18px;
+  }
+  header nav ul li a {
+    font-size : 14px;
+  }
+}
